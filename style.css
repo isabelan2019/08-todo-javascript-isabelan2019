@@ -1,0 +1,34 @@
+body{
+  background-color:#ffe6e6;
+  font-family: "Marker Felt", fantasy;
+  color:#993300;
+  text-align: center;
+  font-size:30px;
+}
+
+h1{
+  font-size:70px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+input{
+  width:200px;
+  height:25px;
+  border-radius:1em;
+}
+button{
+  font-family: "Marker Felt", fantasy;
+  color:#cc0052;
+  border-radius:1em;
+  font-size:15px;
+  padding:10px;
+}
+p{
+  display:inline-block;
+  font-size:20px;
+  margin:20px;
+}
+#todo-list{
+  display:flex;
+  flex-direction:column;
+}
