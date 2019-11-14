@@ -45,7 +45,7 @@ p{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-    width:400px;
+  width:400px;
 }
 .checkboxBefore{
   color:green;
