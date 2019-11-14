@@ -31,8 +31,29 @@ p{
 #todo-list{
   display:flex;
   flex-direction:column;
+  width:400px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .toDoTextComplete{
   text-decoration: line-through;
   color:grey;
+}
+.toDoTask{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+    width:400px;
+}
+.checkboxBefore{
+  color:green;
+  justify-self:flex-start;
+
+}
+.deleteBtn{
+  color:red;
+  font-weight: bolder;
+  justify-self:flex-end;
 }

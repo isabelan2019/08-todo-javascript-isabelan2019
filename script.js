@@ -31,7 +31,8 @@ function renderToDos(todo){
   toDoTask.setAttribute("id",todo.id);
 
   var checkbox=document.createElement("button");
-  var checkboxText=document.createTextNode("Check");
+  var checkboxText=document.createTextNode("");
+  checkbox.innerHTML= "&#10004;";
   checkbox.className="checkboxBefore";
   checkbox.appendChild(checkboxText);
   checkbox.addEventListener("click",complete); //calling update to change complete to true when clicked
@@ -41,7 +42,7 @@ function renderToDos(todo){
   toDoText.appendChild(toDoTextNode);
 
   var deleteBtn=document.createElement("button");
-  var deleteBtnText=document.createTextNode("Delete");
+  var deleteBtnText=document.createTextNode("X");
   deleteBtn.className="deleteBtn";
   deleteBtn.appendChild(deleteBtnText);
   deleteBtn.addEventListener("click",deleteFromList); //calling delete to delete from list
@@ -50,6 +51,8 @@ function renderToDos(todo){
   toDoTask.appendChild(toDoText);
   toDoTask.appendChild(deleteBtn);
   document.getElementById("todo-list").appendChild(toDoTask);
+
+  document.getElementById("new-task").value=""
 }
 
 function post(){
