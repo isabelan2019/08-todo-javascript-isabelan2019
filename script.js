@@ -33,7 +33,7 @@ function renderToDos(todo){
   var checkbox=document.createElement("button");
   var checkboxText=document.createTextNode("");
   checkbox.innerHTML= "&#10004;";
-  checkbox.className="checkboxBefore";
+  checkbox.className="checkbox";
   checkbox.appendChild(checkboxText);
   checkbox.addEventListener("click",complete); //calling update to change complete to true when clicked
 

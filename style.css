@@ -19,9 +19,10 @@ input{
 button{
   font-family: "Marker Felt", fantasy;
   color:#cc0052;
-  border-radius:1em;
+  border-radius:20%;
   font-size:15px;
   padding:10px;
+  background-color: white;
 }
 p{
   display:inline-block;
@@ -46,14 +47,23 @@ p{
   flex-direction: row;
   justify-content: space-between;
   width:400px;
+  border-bottom: 1px dotted #cc0052;
 }
-.checkboxBefore{
+
+.checkbox{
   color:green;
   justify-self:flex-start;
-
+  height: 35px;
+  align-self:center;
 }
 .deleteBtn{
   color:red;
   font-weight: bolder;
   justify-self:flex-end;
+  align-self:center;
+  height: 35px;
+}
+
+#add{
+  margin-left:10px;
 }
