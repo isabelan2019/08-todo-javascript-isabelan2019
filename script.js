@@ -1,4 +1,9 @@
-//adds a todo to the list
+//adds a todo to the list via enter and add button
+document.getElementById("new-task").addEventListener("keyup",function(event){
+    if (event.keyCode===13){
+      document.getElementById("add").click();
+    }
+  })
 document.getElementById("add").addEventListener("click",post);
 
 //list -- show saved todos when refreshes
